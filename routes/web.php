@@ -31,7 +31,7 @@ Route::post('/logout',[userController::class,'logout']);
 Route::post('/login',[userController::class,'login']);
 
 //post routes
-Route::post('/create-post',[postController::class,'createPost']);
-Route::get('/edit-post/{post}',[postController::class,'editPost']);
-Route::put('/edit-post/{post}',[postController::class,'updatePost']);
-Route::delete('/delete-post/{post}',[postController::class,'deletePost']);
+Route::post('/create-post',[PostController::class,'createPost']);
+Route::get('/edit-post/{post}',[PostController::class,'editPost']);
+Route::put('/edit-post/{post}',[PostController::class,'updatePost']);
+Route::delete('/delete-post/{post}',[PostController::class,'deletePost']);
