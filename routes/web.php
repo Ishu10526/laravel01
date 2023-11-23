@@ -26,9 +26,9 @@ Route::get('/', function () {
     return view('home',['posts'=> $posts]);
 });
 
-Route::post('/register',[userController::class, 'register']);
-Route::post('/logout',[userController::class,'logout']);
-Route::post('/login',[userController::class,'login']);
+Route::post('/register',[UserController::class, 'register']);
+Route::post('/logout',[UserController::class,'logout']);
+Route::post('/login',[UserController::class,'login']);
 
 //post routes
 Route::post('/create-post',[PostController::class,'createPost']);

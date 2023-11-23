@@ -6,7 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
-class userController extends Controller
+class UserController extends Controller
 {
     public function register(Request $request)
     {
